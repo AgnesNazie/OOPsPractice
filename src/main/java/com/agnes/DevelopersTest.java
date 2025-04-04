@@ -2,11 +2,11 @@ package com.agnes;
 
 public class DevelopersTest {
     public static void main(String[] args) {
-        Developer agnes = new Developer("Agnes", "JavaScript");
-        Developer javan = new Developer("Javan", "Java");
-        Developer elon = new Developer("Elon" , "Python");
+        Developer agnes = new Developer("Agnes", 29, "JavaScript");
+        Developer javan = new Developer("Javan", 35,"Java");
+        Developer elon = new Developer("Elon" , 33,"Python");
 
-        elon.code();
+
         agnes.introduce();
         javan.introduce();
         elon.setName("Musk");

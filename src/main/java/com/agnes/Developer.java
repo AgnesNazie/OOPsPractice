@@ -27,6 +27,6 @@ public class Developer extends Person{
     //create method for code
 
     void introduce(){
-        System.out.println(getName() + " I like coding in " + codeLanguage);
+        System.out.println(getName() + " like coding in " + codeLanguage);
     }
 }
