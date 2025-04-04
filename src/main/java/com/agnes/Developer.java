@@ -2,8 +2,8 @@ package com.agnes;
 
 public class Developer {
     //initialise fields
-    String name;
-    String language;
+    private String name;
+    private String language;
 
     //constructors for fields
 
@@ -41,6 +41,6 @@ public class Developer {
         System.out.println("Name " + name + " is coding in " + language);
     }
     void introduce(){
-        System.out.println("Hi, I am " + name + "I like coding in " + language);
+        System.out.println("Hi, I am " + name + " I like coding in " + language);
     }
 }
