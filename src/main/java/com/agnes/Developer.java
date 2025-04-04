@@ -1,46 +1,32 @@
 package com.agnes;
 
-public class Developer {
+public class Developer extends Person{
     //initialise fields
-    private String name;
-    private String language;
+
+    private String codeLanguage;
 
     //constructors for fields
 
-    public Developer(String name, String language) {
-        this.name = name;
-        this.language = language;
 
+    public Developer(String name, int age, String codeLanguage) {
+        super(name, age);
+        this.codeLanguage = codeLanguage;
     }
+      //getter for language
 
-    //getter for name
-    public String getName() {
-        return name;
-    }
-    // setter for name
-
-    public void setName(String name) {
-        if (name == null || name.trim().isEmpty())
-            throw new IllegalArgumentException("Name cannot be empty or null");
-        this.name = name;
-    }
-    //getter for language
-
-    public String getLanguage() {
-        return language;
+    public String getCodeLanguage() {
+        return codeLanguage;
     }
     //setter for language
 
-    public void setLanguage(String language) {
-        if (language == null || language.trim().isEmpty())
-            throw new IllegalArgumentException("Language cannot be null or empty");
-        this.language = language;
+    public void setCodeLanguage(String codeLanguage) {
+        if (codeLanguage == null || codeLanguage.trim().isEmpty())
+            throw new IllegalArgumentException("Code Language cannot be null or empty");
+        this.codeLanguage = codeLanguage;
     }
     //create method for code
-    void code(){
-        System.out.println("Name " + name + " is coding in " + language);
-    }
+
     void introduce(){
-        System.out.println("Hi, I am " + name + " I like coding in " + language);
+        System.out.println(getName() + " I like coding in " + codeLanguage);
     }
 }

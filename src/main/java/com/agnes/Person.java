@@ -17,10 +17,10 @@ public class Person {
     }
 
     //setter for name
-    public String setName() {
+    public void setName(String name) {
         if (name == null || name.trim().isEmpty())
             throw new IllegalArgumentException("Name cannot be null or empty");
-        return name;
+        this.name = name;
     }
     //getter for age
 
