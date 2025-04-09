@@ -6,7 +6,7 @@ public class CarCar {
     int speed;
     //methods
     void drive(){
-        System.out.println("The " + brand + " is driving at " + speed + " km/h");
+        System.out.println("The car " + brand + " is driving at speed  " + speed + " km/h");
     }
 
 }
